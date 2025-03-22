@@ -1,0 +1,660 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* transition: background 0.3s; */
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background: #fff; */
+    background: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 97.4%;
+    max-width:100%;
+    /* height:20px ; */
+    /* width:  */
+    /* z-index: 1000; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* z-index: 1; */
+}
+
+/* Logo */
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Navigation */
+.headtop {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: left; */
+    /* gap: 15px; */
+    padding-left: 0;
+    /* position: absolute; */
+    /* top: 10px; */
+}
+
+/* Navigation Links */
+.nav-links {
+    position: absolute;
+    top: 0;
+    display: flex;
+    list-style: none;
+    /* padding: 2rem, 2rem; */
+    margin-left: 5rem;
+    /* margin: 0; */
+}
+.nav-link2{
+    display: flex;
+    list-style: none;
+    /* padding: 2rem, 2rem; */
+    /* margin-left: -5rem; */
+    position: absolute;
+    /* top: 69px; */
+    /* margin: 0; */
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+.nav-link2 li{
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #330066;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-link2 a{
+    text-decoration: none;
+    color: #330066;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Language Selector */
+#languageSelect {
+  
+    
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 2rem;
+}
+
+/* Dark Mode Button */
+/* .moon{
+    border: 2px solid;
+} */
+#darkModeToggle {
+    position: absolute;
+  right: 8px;
+  top: -3px;
+    /* border: 2px solid; */
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #222; /* Ensuring it's visible */
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+
+.dark-mode{
+    background-color: black;
+    /* color: white; */
+   }
+ .dark-mode .nav-links a{
+    color: white;
+} 
+.dark-mode .nav-link2 a{
+    color: white;
+}
+.dark-mode .nav-link2{
+    background-color: black;
+}
+.dark-mode .servicehead1 .servicehead2{
+    color: white;
+}
+.dark-mode .service{
+    /* color: white; */
+}
+.dark-mode .booking{
+    background-color: black;
+    /* color: white; */
+}
+.dark-mode .holidaypack{
+    background-color: black;
+    color: black;
+}
+.dark-mode .dropdown-content{
+    background-color: black;
+}
+/* designing the body section  */
+.bodypart{
+    background: url(./pics/train\ back2.jpg);
+    background-size: cover;
+    background-position: center center; /* Moves the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    /* width: 100%; */
+    margin-top: 6.6rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    /* width: 100%; */
+}
+/* heading  */
+.bodypart .heading {
+    color: white;
+    text-align: right;
+    margin-right: 5rem;
+    margin-top: 12rem;
+}
+.bodypart .heading h1{
+    font-size: 3rem;
+    margin-left: 19rem;
+    /* margin-top: 2rem; */
+    padding-left: 6rem
+}
+.bodypart .heading h3{
+    font-size: 1.8rem;
+    margin-top: -3rem;
+    margin-left: 26rem;
+}
+
+
+/* services heading  */
+.suitable-service{
+    margin-top: -3.9rem;
+    padding-top: 2rem;
+}
+.booking{
+    border: 2px solid white;
+    background-color: white;
+    color: rgb(64, 64, 127);
+    display: flex;
+    flex-direction: column;
+    width: 41%;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: -17rem;
+    margin-left: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.booking h2{
+    margin-bottom: 2.4rem;
+}
+.booking #source{
+    /* display: inline; */
+    width: 80%;
+    margin-top: 0rem;
+    margin-bottom: 1.2rem;
+    /* height: 2rem; */
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0.2rem 2rem;
+    height: 1.5rem;
+    outline: none;
+}
+.booking #destination{
+    width: 80%;
+    margin-top: 0.2rem;
+    margin-bottom: 1.2rem;
+    height: 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0.2rem 2rem;
+    margin-left: -1.7rem;
+    outline: none;
+    margin-left: 0.5rem;
+}
+.booking #date{
+    width: 30%;
+    margin-top: 1.2rem;
+    margin-bottom: 3.2rem;
+    border: 1px solid rgb(64, 64, 127);
+    border-radius: 4px;
+    height: 2rem;
+    padding: 0.2rem 2rem;
+}
+.booking .search{
+    width: 20%;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: -1rem;
+    /* padding: 0.8rem 0.8rem; */
+    /* padding-bottom: 2rem; */
+    /* padding-right: 5rem; */
+    text-align: center;
+}
+.suggestions {
+    position: absolute;
+    width: 30%;
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    z-index: 10;
+    margin-top: 2rem;
+}
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    
+}
+/* onclicking the source and destination search bar  */
+.input-group{
+    border: 2px solid black;
+    display: flex;
+    width: 79%;
+    height: 2rem;
+    margin: 2rem 2rem;
+    padding-left: 0.2rem;
+}
+.input-group i{
+    margin-top: 0.5rem;
+   
+}
+i #voicesearch{
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.search-section {
+    text-align: center;
+    margin: 20px;
+}
+
+/* designing the findingpage  */
+.servicehead1,.servicehead2{
+    text-align: center;
+    font-size: 2rem;
+  
+}
+
+     .findingpage{
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* width: 18%; */
+        /* border: 2px solid; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin-top: 3rem;
+        /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* gap: 20px; */
+    /* max-width: 800px; */
+    /* margin: auto; */
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 121px;
+    flex-wrap: wrap;
+}
+     
+        /* width: 100%; */
+        .service img {
+            cursor: pointer;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .service img:hover{
+          
+                filter: invert(100%) brightness(200%);
+          /* background-color: blue; */
+            
+        }
+        .dark-mode .servicehead1, .servicehead2{
+            color: white;
+        }
+        .dark-mode .findingpage{
+            color: white;
+        }
+        .dark-mode .suitable-service{
+            background-color: black;
+            /* color: white !important; */
+            
+        }
+
+        /* designing the holiday page  */
+        .holidaypack{
+            margin-top: -2.9rem;
+            padding-top: 2rem;
+        }
+        .holiday{
+           text-align: center;
+           /* border: 2px solid; */
+        }
+        .dark-mode .holiday{
+            color: white;
+        }
+        
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            padding: 15px;
+            margin: 2rem 2rem;
+            cursor: pointer;
+        }
+        .card:hover{
+            background-color:  rgb(244, 244, 244);
+        }
+        .card img {
+            /* width: 100%; */
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            /* margin: 2rem 2rem; */
+        }        
+        .container{
+            /* border: 2px solid; */
+            /* display: grid; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* gap: 20px; */
+            /* max-width: 800px; */
+            /* margin: auto; */
+            
+            /* text-align: center; */
+            /* margin-bottom: 3rem; */
+            display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+        }
+        /* design the social media container  */
+        .social{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* border: 2px solid; */
+           
+                background-color: rgb(7, 4, 88); /* Semi-transparent red */
+             color: wheat;
+            
+            
+             
+        }
+        .social img{
+            width: 49px;
+            height: 47px;
+            border-radius: 50%;
+            /* border: 2px solid black; */
+            padding: 8px;
+            cursor: pointer;
+        }
+        .social h3{
+            padding-right: 2rem;
+        }
+
+        /* designing the question part  */
+        .question{
+            display: flex;
+            gap: 50px;
+            /* margin-left: 10rem; */
+            margin-top: 0.5rem;
+            background-color:  rgb(12, 88, 195);
+            padding-left: 10rem;
+            color: white;
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+        .menu-column{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            cursor: pointer;
+        }
+        .menu-column p:hover{
+            border: 1px solid   rgb(7, 7, 55);
+            padding: 0.2rem 0.2rem;
+        }
+
+        /* designing the footer  */
+        .footer{
+            background: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer img{
+            width: 100%;
+            height: auto;
+        }
+        .footer-content{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+       
+        .writing{
+            font-size: 14px;
+    color: #333;
+        }
+        /* for dropdown menu under trains  */
+        /* .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+        } */
+        /* .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 5px 0;
+        } */
+        /* .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        } */
+        /* Show dropdown on hover */
+        /* .dropdown:hover .dropdown-content {
+            display: block;
+        } */
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            top: 100%;
+            left: 110px;
+            padding: 10px;
+            z-index: 100;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 8px 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show dropdown on hover */
+        .nav-link2 li:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* @media screen and (min-width:768px)and (  max-width:1100px){
+            .headtop{
+             margin-top: 0rem;
+             margin-left: -11rem;
+            }
+            #languageSelect{
+             margin-left: -1rem;
+            }
+         } */
+         @media screen and (max-width: 1160px) {
+             .header {
+                 flex-direction: column;
+                 align-items: center;
+                 padding: 10px;
+                 /* padding: 0.1rem 0.1rem; */
+                 /* padding-top: 4px; */
+                 max-width: 100%;
+                 /* padding-left: 0px; */
+                 /* height: 6rem; */
+             }
+             .dropdown-content{
+                position: absolute;
+                top: -167px;
+        left: -96px;
+             }
+             .headtop {
+                 flex-direction: column;
+                 align-items: center;
+                 width: 100%;
+                 position: relative;
+                 max-width: 100%;
+                
+             }
+         
+             .nav-links {
+                 display: none;
+                 flex-direction: column;
+                 position: absolute;
+                 top: -111px;
+                 background: white;
+                 box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                 width: 200px;
+                 padding: 10px;
+                 right: 0;
+             }
+             .nav-link2{
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 76px;
+                background: white;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+                width: 200px;
+                padding: 10px;
+                right: 0;
+             }
+         
+             .nav-links.show {
+                 display: flex;
+             }
+             .nav-link2.show{
+                display: flex;
+             }
+         
+             .nav-links li {
+                 text-align: center;
+                 margin: 5px 0;
+             }
+             .nav-link2 li{
+                text-align: center;
+                margin: 5px 0;
+             }
+         
+             /* Properly positioning the dropdown & dark mode */
+             #languageSelect
+            {
+                 margin-top: 24px;
+                 margin-left: 0rem;
+             }
+             #darkModeToggle{
+                margin-left: 2rem;
+                /* padding: ; */
+             }
+             .booking{
+                width: 92%;
+                margin-top: 1rem;
+             }
+         
+             /* Ensure the hamburger menu is visible */
+             .menu-toggle {
+                 display: block;
+                 position: absolute;
+                 top: 15px;
+                 right: 15px;
+             }
+             .dark-mode .menu-toggle{
+                color: white;
+             }
+             .dark-mode .nav-links.show{
+                background-color: black;
+             }
+             .dark-mode .nav-links li{
+                color: white;
+             }
+             .bodypart .heading h1{
+                display: flex;
+                flex-wrap: wrap;
+                 font-size: 2rem;
+                 margin-left: 2rem;
+                 margin-top: -8rem;
+                 text-align: center;
+                 justify-content: center;
+             }
+             .bodypart .heading h3{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1rem;
+                margin-left: 8rem;
+                /* text-align: center; */
+                margin-top: 2rem;
+                justify-content: center;
+            }
+            .menu-column{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -5rem;
+            }
+            .bodypart{
+                margin-top: 7.6rem;
+            }
+             
+         }
+         

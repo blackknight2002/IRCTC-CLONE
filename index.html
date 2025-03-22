@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Redesign</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header ">
+        <div class="logo">
+       <img src="./pics/irctc logo.png" alt="" srcset="">
+        </div>
+        <div class="headtop ">
+            <ul class="nav-links">
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./login.html">REGISTER</a></li>
+                <li><a href="#">AGENT LOGIN</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">HELP & SUPPORT</a></li>
+                <li><a href="#">DAILY DEALS</a></li>
+            </ul> <br>
+          
+          <ul class="nav-link2">
+            <li><a href="#">IRCTC EXCLUSIVE</a></li>
+            <li>
+                <a href="#">TRAINS</a>
+                <div class="dropdown-content">
+                    <a href="#services">Book Ticket</a>
+                    <a href="#">Foreign Tourist Booking</a>
+                    <a href="#">Connecting Journey Booking</a>
+                    <a href="#">IRCTC Trains</a>
+                    <a href="#">Cancel Ticket</a>
+                    <a href="#">PNR Enquiry</a>
+                    <a href="#">Train Schedule</a>
+                    <a href="./traintrack.html">Track Your Train</a>
+                    <a href="#">FTR Coach/Train Booking</a>
+                    <a href="#">Dogs/Cats Booking</a>
+                </div>
+            </li>
+            <li><a href="#">LOYALTY</a></li>
+            <li><a href="#">IRCTC eWallet</a></li>
+            <li><a href="#">BUSES</a></li>
+            <li><a href="#">FLIGHTS</a></li>
+            <li><a href="#">HOTELS</a></li>
+            <li><a href="#">HOLIDAYS</a></li>
+            <li><a href="#">MEALS</a></li>
+            <li><a href="#">PROMOTIONS</a></li>
+            <li><a href="#">MORE</a></li>
+        </ul>
+    
+               <div class="moon">
+                <button id="darkModeToggle">🌙</button>
+            </div>
+        </div>
+         
+        
+        <button class="menu-toggle">☰</button>
+        
+
+        
+      
+    </header>
+    
+     <section class="bodypart">
+    
+
+    <section class="heading">
+        
+        <h1>INDIAN RAILWAYS</h1>
+        <h3>Safety | Security | Punctuality</h3>
+       
+    </section>
+
+    <section class="services">
+        <div class="booking">
+        <h2>BOOK YOUR JOURNEY TICKETS</h2>
+       
+
+        <label for="source">FROM</label>
+        <div class="input-group">
+            <i class="fa-solid fa-location-arrow"></i>
+           
+           
+        <input type="text" id="source" placeholder="Enter source station" onkeyup="showSuggestions(this, 'sourceSuggestions')">
+        <button class="mic-btn" onclick="startVoiceRecognition('source')">
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+        <div class="suggestions" id="sourceSuggestions"></div>
+            
+           </div>
+
+
+        
+           <label for="destination">TO</label>
+        <div class="input-group">
+            <i class="fa-solid fa-location-dot" id="voicesearch"></i>  <!-- 📍 Location Pin -->
+
+           
+            <input type="text" id="destination" placeholder="Enter destination station" onkeyup="showSuggestions(this, 'destinationSuggestions')">
+            <button class="mic-btn" onclick="startVoiceRecognition('destination')">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+            <div class="suggestions" id="destinationSuggestions"></div>
+               </div>
+    
+   
+
+      
+        <label for="date">DD/MM/YYYY</label>
+        <input type="date" name="" id="date">
+        <button class="search" onclick="searchTrains()">Search trains</button>
+    </div>
+    </section>
+
+    
+     </section>
+     <div class="suitable-service">
+     <h2 class="servicehead1">Still struggling to find the right one for you??</h2>
+        <h2 class="servicehead2">Find a service suitable for you here!!</h2>
+    <section class="findingpage">
+        
+        <div class="service">
+            <img src="./pics/flight.jpg" alt="Flights">
+            <p>FLIGHTS</p>
+        </div>
+        <div class="service">
+            <img src="./pics/hotel.jpg" alt="Hotels">
+            <p>HOTELS</p>
+        </div>
+        <div class="service">
+            <img src="./pics/rail drishti.jpg" alt="Rail Drishti">
+            <p>RAIL DRISHTI</p>
+        </div>
+        <div class="service">
+            <img src="./pics/ecatering.jpg" alt="E-Catering">
+            <p>E-CATERING</p> 
+        </div>  
+        <div class="service">
+            <img src="./pics/bus.jpg" alt="Bus">
+            <p>BUS</p>
+        </div>
+        
+        <div class="service">
+            <img src="./pics/holiday.png" alt="Holiday Packages">
+            <p>HOLIDAY PACKAGES</p>
+        </div>
+        <div class="service">
+            <img src="./pics/tourist.jpg" alt="Tourist Train">
+            <p>TOURIST TRAIN</p>
+        </div>
+        <div class="service">
+            <img src="./pics/hill.jpg" alt="Hill Railways">
+            <p>HILL RAILWAYS</p>
+        </div>
+        <div class="service">
+            <img src="./pics/charter.jpg" alt="Charter Train">
+            <p>CHARTER TRAIN</p>
+        </div>
+        <div class="service">
+            <img src="./pics/gallery.jpg" alt="Gallery">
+            <p>GALLERY</p>
+        </div>
+    </div>
+        
+    </section>
+    <div class="holidaypack">
+    <h1 class="holiday">HOLIDAYS</h1>
+    <div class="container">
+        <div class="card">
+            <img src="./pics/maharaja.jpg" alt="Maharajas' Express">
+            <h2>Maharajas' Express</h2>
+            <p>Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
+        </div>
+
+        <div class="card">
+            <img src="./pics/international.jpg" alt="International Packages">
+            <h2>International Packages</h2>
+            <p>Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.
+
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="./pics/domestic.jpg" alt="Domestic Air Packages">
+            <h2>Domestic Air Packages</h2>
+            <p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!
+
+            </p>
+        </div>
+        <div class="card">
+            <img src="./pics/bharat gaurav.jpg" alt="Domestic Air Packages">
+            <h2>Bharat Gaurav Tourist Train</h2>
+            <p>IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase India’s rich cultural heritage.</p>
+        </div>
+        <div class="card">
+            <img src="./pics/rail tour.webp" alt="Domestic Air Packages">
+            <h2>Rail Tour Packages
+            </h2>
+            <p>IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+        </div>
+    
+    </div>
+</div>
+     <div class="social">
+        <h3 >Get connected with us on social networks</h3>
+           <!-- <div class="socialicon"></div> -->
+           <a href="https://www.facebook.com/IRCTCofficial/" target="_blank">
+            <img src="./pics/facebook.avif" alt="IRCTC on Facebook">
+        </a>
+        <a href="https://www.instagram.com/irctcofficial/" target="_blank">
+            <img src="./pics/insta.webp" alt="IRCTC on Instagram">
+        </a>
+        <a href="https://www.linkedin.com/company/irctcofficial/" target="_blank">
+            <img src="./pics/linkedin icon.webp" alt="IRCTC on LinkedIn">
+        </a>
+        <a href="https://t.me/IRCTC_Official" target="_blank">
+            <img src="./pics/telegram.webp" alt="IRCTC on Telegram">
+        </a>
+        <a href="https://twitter.com/IRCTCofficial" target="_blank">
+            <img src="./pics/twitter.jpg" alt="IRCTC on Twitter">
+        </a>
+        <a href="https://www.youtube.com/c/IRCTCOFFICIAL" target="_blank">
+            <img src="./pics/youtube.jpg" alt="IRCTC on YouTube">
+        </a>
+        
+               
+     </div>
+     <!-- making the question button  -->
+      <div class="question">
+        <div class="menu-column">
+            <p>IRCTC Trains ▾</p>
+            <p>General Information ▾</p>
+            <p>Important Information ▾</p>
+            <p>Agents ▾</p>
+            <p>Enquiries ▾</p>
+        </div>
+        <div class="menu-column">
+            <p>How To ▾</p>
+            <p>IRCTC Official App ▾</p>
+            <p>Advertise with us ▾</p>
+            <p>Refund Rules ▾</p>
+            <p>Person With Disability Facilities ▾</p>
+        </div>
+        <div class="menu-column">
+            <p>IRCTC eWallet ▾</p>
+            <p>Avail Loyalty Benefits ▾</p>
+            <p>IRCTC-iPAY Payment Gateway ▾</p>
+            <p>IRCTC Zone ▾</p>
+            <p>DMRC Ticket Booking at IRCTC ▾</p>
+        </div>
+        <div class="menu-column">
+            <p>For Newly Migrated Agents ▾</p>
+            <p>Mobile Zone ▾</p>
+            <p>Policies ▾</p>
+            <p>Ask Disha ChatBot ▾</p>
+            <p>About us ▾</p>
+        </div>
+        <div class="menu-column">
+            <p>Help & Support</p>
+        </div>
+      </div>
+    <footer class="footer">
+        <div class="footer-content">
+        <img src="./pics/footer image.png" alt="">
+        <div class="writing">
+        <p>Copyright Â &copy;2025 - www.irctc.co.in. All Rights Reserved </p>
+          <p> Designed and Hosted by SWAPNAPRIYA DEBNATH</p>
+          </div>
+        </div>
+        </footer>
+</body>
+</html>
