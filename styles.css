@@ -155,7 +155,7 @@ body {
 }
 /* designing the body section  */
 .bodypart{
-    background: url(./pics/train\ back2.jpg);
+    background: url(./train\ back2.jpg);
     background-size: cover;
     background-position: center center; /* Moves the image */
     background-repeat: no-repeat; /* Prevents tiling */
